@@ -34,4 +34,4 @@ override.tf.json
 terraform.rc
 
 # Ignore the key for GCP
-keys.json
+**/keys.json
