@@ -1,29 +1,8 @@
-sudo apt update -y 
-
-sudo apt install apache2 -y
-
-sudo apt install ufw
-
-sudo ufw default deny incoming
-sudo ufw default allow outgoing
-sudo ufw allow 'WWW'
-sudo ufw allow ssh
-sudo ufw allow 22
-sudo ufw allow http
-sudo ufw allow https
-sudo ufw allow 80
-
-sudo ufw enable -y
-
-# sudo ufw status
-
-# sudo systemctl status apache2
-
-sudo apt-get update
-sudo apt-get install default-mysql-server -y
-
-# commands to install joomla on vm
-
+# update repositories and install any available software updates
+sudo apt update -y
+# sudo apt upgrade -y
+# install Apache HTTPD and MySQL
+sudo apt-get install apache2 mariadb-server mariadb-client curl -y
 # install PHP components
 sudo apt install php php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip -y
 # download latest joomla version
