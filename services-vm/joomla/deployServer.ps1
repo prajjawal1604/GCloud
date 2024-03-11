@@ -22,6 +22,7 @@ sudo ufw enable -y
 sudo apt-get update
 sudo apt-get install default-mysql-server -y
 
+##################################
 # commands to install joomla on vm
 
 # install PHP components
