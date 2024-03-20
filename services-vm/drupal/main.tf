@@ -61,11 +61,12 @@ resource "google_compute_instance" "vm-services-drupal" {
 
   network_interface {
     access_config {
+      nat_ip = "34.131.141.30"
       network_tier = "PREMIUM"
     }
 
-    queue_count = 0
-    stack_type  = "IPV4_ONLY"
+    # queue_count = 0
+    # stack_type  = "IPV4_ONLY"
     subnetwork  = "projects/gcp-terraform-414508/regions/asia-south2/subnetworks/vm-application-subnet"
   }
 

@@ -9,8 +9,8 @@ terraform {
 
 provider "google" {
   # Configuration options
-  project = "gcp-terraform-414508"
-  region = "asia-south1"
-  zone = "asia-south1-a"
-  credentials = "keys.json"
+  project = "devops-test-ford"
+  # region = "asia-south1"
+  # zone = "asia-south1-c"
+  credentials = "devops-test-ford.json"
 }

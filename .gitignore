@@ -69,3 +69,5 @@ terraform.rc
 
 # Ignore the key for GCP
 **/keys.json
+
+**/devops-test-ford.json
