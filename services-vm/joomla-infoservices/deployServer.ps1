@@ -28,7 +28,7 @@ sudo apt-get install default-mysql-server -y
 # install PHP components
 sudo apt install php php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip -y
 # download latest joomla version
-sudo wget -O joomla.tar.gz https://downloads.joomla.org/cms/joomla3/3-9-24/Joomla_3-9-24-Stable-Full_Package.tar.gz?format=gz
+sudo wget -O joomla.tar.gz https://downloads.joomla.org/cms/joomla5/5-0-3/Joomla_5-0-3-Stable-Full_Package.tar.gz?format=gz
 # extract joomla.tar.gz
 sudo mkdir /var/www/joomla
 sudo tar xzvf joomla.tar.gz --directory /var/www/joomla
