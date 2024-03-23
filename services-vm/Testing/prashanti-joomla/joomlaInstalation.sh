@@ -1,6 +1,6 @@
 # update repositories and install any available software updates
 sudo apt update -y
-# sudo apt upgrade -y
+sudo apt upgrade -y
 
 # install Apache HTTPD and MySQL
 sudo apt-get install apache2 mariadb-server mariadb-client curl -y

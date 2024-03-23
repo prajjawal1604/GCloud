@@ -1,6 +1,4 @@
-
-
-resource "google_compute_instance" "test-vm-joomla-prashanti" {
+resource "google_compute_instance" "joomla-vm" {
   name = var.vm_name
   machine_type = var.machine_type
 
@@ -28,7 +26,5 @@ resource "google_compute_instance" "test-vm-joomla-prashanti" {
   }
 
   tags = ["http-server", "https-server"]
-  metadata_startup_script = file("${path.module}/${var.script}")
-  zone = var.zone
+  zone = "${var.region}-${var.zone}"
 }
-

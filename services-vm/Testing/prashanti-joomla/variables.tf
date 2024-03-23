@@ -42,8 +42,3 @@ variable "vm_disk_type" {
   description = "Type of disk associated with the virtual machine"
   type        = string
 }
-
-variable "script" {
-  description = "Script used for post-deployment service installation in production and QA environments"
-  type        = string
-}
